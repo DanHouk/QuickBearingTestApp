@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/bearing_title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bearing: "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/bearing_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="nope"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/bearing_title_tv"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lat_title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/bearing_title_tv"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Lat: "/>
+
+    <TextView
+        android:id="@+id/lat_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="nope"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/lat_title_tv"
+        app:layout_constraintTop_toBottomOf="@+id/bearing_tv" />
+
+    <TextView
+        android:id="@+id/lon_title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/lat_title_tv"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Lon: "/>
+
+    <TextView
+        android:id="@+id/lon_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="nope"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/lon_title_tv"
+        app:layout_constraintTop_toBottomOf="@+id/lat_tv" />
+
+    <TextView
+        android:id="@+id/speed_title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/lon_title_tv"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Speed: "/>
+
+    <TextView
+        android:id="@+id/speed_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="nope"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/speed_title_tv"
+        app:layout_constraintTop_toBottomOf="@+id/lon_tv" />
+
+    <TextView
+        android:id="@+id/accuracy_title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/speed_title_tv"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Accuracy: "/>
+
+    <TextView
+        android:id="@+id/accuracy_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="nope"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/accuracy_title_tv"
+        app:layout_constraintTop_toBottomOf="@+id/speed_tv" />
+</android.support.constraint.ConstraintLayout>
